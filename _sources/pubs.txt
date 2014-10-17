@@ -1,0 +1,170 @@
+.. _pubs:
+
+:tocdepth: 1
+
+************
+Publications
+************
+
+Peer-Reviewed Articles
+======================
+
+.. todo: links to my own Code page
+
+.. todo: refs in Research page link here
+
+The Tree of Sex Consortium:
+T.-L. Ashman, D. Bachtrog, H. Blackmon, E.E. Goldberg, M.W. Hahn, M. Kirkpatrick, J. Kitano, J.E. Mank, I. Mayrose, R. Ming, S.P. Otto, C.L. Peichel, M.W. Pennell, N. Perrin, L. Ross, N. Valenzuela & J.C. Vamosi.
+2014.
+**Tree of sex: A database of sexual systems.**
+*Scientific Data* 1:140015.
+|br|
+`[journal] <http://dx.doi.org/10.1038/sdata.2014.15>`__
+`[pdf] <_static/reprints/tree_sex.pdf>`__
+`[data] <http://dx.doi.org/10.5061/dryad.v1908>`__
+`[website] <http://treeofsex.org/>`__
+`[scholar] <http://scholar.google.com/scholar?cluster=11232605633892413746>`__
+
+Fagan, W.F, Y.E. Pearson, E.A. Larsen, H.J. Lynch, J.B. Turner, H. Staver, A.E. Noble, S. Bewick, and E.E. Goldberg.
+2013. 
+**Phylogenetic prediction of the maximum per capita rate of population growth.**
+*Proceedings of the Royal Society B* 280:20130523.
+|br|
+`[journal] <http://dx.doi.org/10.1098/rspb.2013.0523>`__
+`[pdf] <_static/reprints/little-r.pdf>`__
+`[data] <http://rspb.royalsocietypublishing.org/content/280/1763/20130523/suppl/DC1>`__
+`[scholar] <http://scholar.google.com/scholar?cluster=4270880594899253213>`__
+
+Goldberg, E.E. and B. Igić.
+2012.
+**Tempo and mode in plant breeding system evolution.**
+*Evolution* 66:3701-3709.
+|br|
+`[journal] <http://dx.doi.org/10.1111/j.1558-5646.2012.01730.x>`__
+`[pdf] <_static/reprints/si-classe.pdf>`__
+`[data] <http://datadryad.org/handle/10255/dryad.1888>`__
+`[code] <http://www.zoology.ubc.ca/prog/diversitree/>`__
+`[scholar] <http://scholar.google.com/scholar?cluster=14278354787594584240>`__
+
+Goldberg, E.E., R. Lande, and T.D. Price.
+2012.
+**Population regulation and character displacement in a seasonal environment.**
+*The American Naturalist* 179:693-705.
+|br|
+`[journal] <http://dx.doi.org/10.1086/665649>`__
+`[pdf] <_static/reprints/season-cd.pdf>`__
+`[blurb] <_static/reprints/season-cd-asn.pdf>`__
+`[scholar] <http://scholar.google.com/scholar?cluster=4275682646519150052>`__
+
+Goldberg, E.E., L.T. Lancaster, and R.H. Ree.
+2011.
+**Phylogenetic inference of reciprocal effects between geographic range evolution and diversification.**
+*Systematic Biology* 60:451-465.
+|br|
+`[journal] <http://dx.doi.org/10.1093/sysbio/syr046>`__
+`[pdf] <_static/reprints/geosse.pdf>`__
+`[data, scripts] <http://datadryad.org/handle/10255/dryad.8343>`__
+`[code] <http://www.zoology.ubc.ca/prog/diversitree/>`__
+`[scholar] <http://scholar.google.com/scholar?cluster=8871315564839721310>`__
+
+Anacker, B.L.*, J.B. Whittall*, E.E. Goldberg, and S.P. Harrison.
+2011.
+**Origins and consequences of serpentine endemism in the California flora.**
+*Evolution* 65:365-376.
+|br|
+`[journal] <http://dx.doi.org/10.1111/j.1558-5646.2010.01114.x>`__
+`[pdf] <_static/reprints/serpentine.pdf>`__
+`[scholar] <http://scholar.google.com/scholar?cluster=3062264097142324360>`__
+
+Robertson, K., E.E. Goldberg, and B. Igić.
+2011.
+**Comparative evidence for the correlated evolution of polyploidy and self-compatibility in Solanaceae.**
+*Evolution* 65:139-155.
+|br|
+`[journal] <http://dx.doi.org/10.1111/j.1558-5646.2010.01099.x>`__
+`[pdf] <_static/reprints/si-ploidy.pdf>`__
+`[scholar] <http://scholar.google.com/scholar?cluster=8330960008116914037>`__
+
+Goldberg, E.E., J.R. Kohn, R. Lande, K.A. Robertson, S.A. Smith, B. Igić.
+2010.
+**Species selection maintains self-incompatibility.**
+*Science* 320:493-495.
+|br|
+`[journal] <http://dx.doi.org/10.1126/science.1194513>`__
+`[pdf] <_static/reprints/si-spec_sel.pdf>`__
+`[data] <http://datadryad.org/handle/10255/dryad.1888>`__
+`[commentary] <_static/reprints/si-spec_sel_persp.pdf>`__
+`[scholar] <http://scholar.google.com/scholar?cluster=13510271693884012173>`__
+
+Goldberg, E.E., H.J. Lynch, M.G. Neubert, and W.F. Fagan.
+2010.
+**Effects of branching spatial structure and life history on the asymptotic growth rate of a population.**
+*Theoretical Ecology* 3:137-152.
+|br|
+`[journal] <http://dx.doi.org/10.1007/s12080-009-0058-0>`__
+`[pdf] <_static/reprints/branchiness.pdf>`__
+`[scholar] <http://scholar.google.com/scholar?cluster=8973662590120947265>`__
+
+Goldberg, E.E.* and B. Igic*.
+2008.
+**On phylogenetic tests of irreversible evolution.**
+*Evolution* 62:2727-2741.
+|br|
+`[journal] <http://dx.doi.org/10.1111/j.1558-5646.2008.00505.x>`__
+`[pdf] <_static/reprints/dollo.pdf>`__
+`[scholar] <http://scholar.google.com/scholar?cluster=7855210261074733584>`__
+
+.. for dollo: [press] http://insciences.org/article.php?article_id=1029
+
+Goldberg, E.E. and R. Lande.
+2007.
+**Species' borders and dispersal barriers.**
+*The American Naturalist* 170:297-304.
+|br|
+`[journal] <http://dx.doi.org/10.1086/518946>`__
+`[pdf] <_static/reprints/barriers.pdf>`__
+`[scholar] <http://scholar.google.com/scholar?cluster=8100911941556024592>`__
+
+Roy, K.* and E.E. Goldberg*.
+2007.
+**Origination, extinction and dispersal: integrative models for understanding present-day diversity gradients.**
+*The American Naturalist* 170:S71-S85.
+|br|
+`[journal] <http://dx.doi.org/10.1086/519403>`__
+`[pdf] <_static/reprints/avg_age.pdf>`__
+`[scholar] <http://scholar.google.com/scholar?cluster=793705592641238117>`__
+
+Goldberg, E.E. and R. Lande.
+2006.
+**Ecological and reproductive character displacement on an environmental gradient.**
+*Evolution* 60:1344-1357.
+|br|
+`[journal] <http://dx.doi.org/10.1554/05-696.1>`__
+`[pdf] <_static/reprints/char_disp.pdf>`__
+`[scholar] <http://scholar.google.com/scholar?cluster=6574705171509968641>`__
+
+Goldberg, E.E., K. Roy, R. Lande, and D. Jablonski.
+2005.
+**Diversity, endemism, and age distributions in macroevolutionary sources and sinks.**
+*The American Naturalist* 165:623-633.
+|br|
+`[journal] <http://dx.doi.org/10.1086/430012>`__
+`[pdf] <_static/reprints/source_sink.pdf>`__
+`[scholar] <http://scholar.google.com/scholar?cluster=11519613039851459901>`__
+
+\* *Denotes equal contributions*
+
+Book Chapter
+============
+
+Goldberg, E.E.
+2013.
+**Species selection.**
+In J. Losos, ed. 
+*The Princeton Guide to Evolution.* Princeton University Press.
+|br|
+`[publisher] <http://press.princeton.edu/titles/10100.html>`__
+
+*Please use the journal links when possible.  Local pdf files are provided only to ensure access when publisher websites are unreachable.*
+
+.. include:: links.txt

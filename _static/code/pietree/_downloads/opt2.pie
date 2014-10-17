@@ -1,0 +1,11 @@
+[pietree]
+outfile = example2
+shape = rect
+boxsize = 0
+tipspacing = 20
+tipnamesize = 15
+nodenamesize = 10
+color1 = (1, 0.2, 0)
+color0 = (0.4, 0, 0.7)
+tipnamestatecolor = yes
+linethick = 3

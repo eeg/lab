@@ -1,0 +1,247 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Usage &mdash; PieTree 0.4 documentation</title>
+    
+    <link rel="stylesheet" href="_static/agogo.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '0.4',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="PieTree 0.4 documentation" href="index.html" />
+    <link rel="next" title="Creating a Tree &amp; States Data File" href="treefile.html" />
+    <link rel="prev" title="Preliminaries" href="preliminaries.html" /> 
+  </head>
+  <body>
+    <div class="header-wrapper">
+      <div class="header">
+          <p class="logo"><a href="index.html">
+            <img class="logo" src="_static/logo.png" alt="Logo"/>
+          </a></p>
+        <!-- <div class="headertitle"><a -->
+          <!-- href="index.html">PieTree 0.4 documentation</a></div> -->
+        <div class="headertitle"><br></div>
+        <div class="rel">
+		
+		  <a href="preliminaries.html" title="Preliminaries">PREVIOUS</a>
+		
+		  | 
+		
+		  <a href="treefile.html" title="Creating a Tree &amp; States Data File">NEXT</a>
+		
+		<br>
+	   <!--
+          <a href="preliminaries.html" title="Preliminaries"
+             accesskey="P">previous</a> |
+          <a href="treefile.html" title="Creating a Tree &amp; States Data File"
+             accesskey="N">next</a> |
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a>
+	   -->
+        </div>
+       </div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="content">
+        <div class="document">
+            
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="usage">
+<span id="id1"></span><h1>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h1>
+<p>When running <cite>PieTree</cite>, you provide it with</p>
+<ul class="simple">
+<li>an input data file, containing the Newick-formatted tree and a list of the tip and node states</li>
+<li>optionally (but likely), some options for formatting the image output</li>
+</ul>
+<p>If no input is provided, a usage message will be printed summarizing the available options:</p>
+<div class="highlight-python"><pre>$ PieTree
+usage: PieTree.py [-h] [--version] [--treefile TREEFILE] [--optfile OPTFILE]
+                [--outformat {pdf,ps,svg,png}] [--shape {rect,radial}]
+                ... and a bunch more options</pre>
+</div>
+<div class="section" id="quick-start">
+<h2>Quick start<a class="headerlink" href="#quick-start" title="Permalink to this headline">¶</a></h2>
+<p>A sample tree file with a binary character, called <tt class="docutils literal"><span class="pre">tree2.ttn</span></tt>, is included.
+To use it (adjust paths as necessary):</p>
+<div class="highlight-python"><pre>$ PieTree --treefile PieTree/examples/tree2.ttn
+created pietree.pdf</pre>
+</div>
+<p>The result, in the file <tt class="docutils literal"><span class="pre">pietree.pdf</span></tt>, looks like this:</p>
+<img alt="_images/example0.png" src="_images/example0.png" />
+</div>
+<div class="section" id="input-tree-file">
+<span id="usage-treefile"></span><h2>Input tree file<a class="headerlink" href="#input-tree-file" title="Permalink to this headline">¶</a></h2>
+<p>The tree data file contains the tree structure itself and the character states of its tips and nodes.</p>
+<ul class="simple">
+<li>Tree structure: A Newick string.  If node states will be used, nodes as well as tips should be labeled in this string.  This line must come before the character state lines.</li>
+<li>Tip states: One line for each tip, giving its name and the number corresponding to its character state.</li>
+<li>Node states: One line for each node, giving its name and the probability of it being in each possible state.</li>
+<li>Comments: Lines beginning with <tt class="docutils literal"><span class="pre">#</span></tt> will be ignored.</li>
+</ul>
+<p>This is best illustrated with a small example:</p>
+<div class="highlight-python"><pre># the Newick tree string, with tips and nodes labeled
+((tipA:1, tipB:1)node1:2, tipC:3)node2;
+# tip states, either 0 or 1 for a binary trait
+tipA   1
+tipB   1
+tipC   0
+# node states, with one value for each of the two possible states
+node1  0.2  0.8
+node2  0.5  0.5</pre>
+</div>
+<p>The tree string must be specified first.
+The order of the lines for the tip and node states doesn&#8217;t matter.
+The tip and node names must not contain spaces, and they must match those in the tree string.
+The names and states must be separated by whitespace (of any kind).</p>
+<p>I use the extension <tt class="docutils literal"><span class="pre">.ttn</span></tt> for files formatting like this, which stands for &#8220;trees, tips, nodes&#8221;.
+Such files can easily be constructed by hand or by script.
+I&#8217;ve included an example of how to perform ancestral state reconstructions and generate a <tt class="docutils literal"><span class="pre">.ttn</span></tt> file, using the <a class="reference external" href="http://www.r-project.org">R</a> package <a class="reference external" href="http://www.zoology.ubc.ca/prog/diversitree/">diversitree</a>:</p>
+<ul class="simple">
+<li><a class="reference internal" href="treefile.html#treefile"><em>Creating a Tree &amp; States Data File</em></a></li>
+</ul>
+</div>
+<div class="section" id="specifying-options">
+<span id="usage-options"></span><h2>Specifying options<a class="headerlink" href="#specifying-options" title="Permalink to this headline">¶</a></h2>
+<p>Plotting options may be specified on either the command line or in a separate file.
+Elsewhere is a <a class="reference internal" href="options.html#options"><em>List of All Options</em></a>.
+The example here will use the options <tt class="docutils literal"><span class="pre">treefile</span></tt> (the name of the input tree and character state file), <tt class="docutils literal"><span class="pre">shape</span></tt> (for either a rectangular or circular tree image), and <tt class="docutils literal"><span class="pre">colorX</span></tt> (the color of state X, where X is 0, 1, 2, etc.).</p>
+<div class="section" id="command-line">
+<h3>Command line<a class="headerlink" href="#command-line" title="Permalink to this headline">¶</a></h3>
+<p>On the command line, the name of an option is preceded with <tt class="docutils literal"><span class="pre">--</span></tt>, and its value comes immediately after it, separated by a space or by <tt class="docutils literal"><span class="pre">=</span></tt>.
+Extending the example above:</p>
+<div class="highlight-python"><pre>$ PieTree --treefile PieTree/examples/tree2.ttn --shape=radial</pre>
+</div>
+<p>The color of each state is specified as an RGB triple, where each component is given a value between 0 and 1.
+On the command line, this string must be surrounded by quotes.
+For more details, see <a class="reference internal" href="options.html#colornote"><em>Note on RGB colors</em></a>.
+For example, to make state 0 be red:</p>
+<div class="highlight-python"><pre>$ PieTree --treefile PieTree/examples/tree2.ttn --color0 "(1, 0, 0)"</pre>
+</div>
+</div>
+<div class="section" id="option-file">
+<h3>Option file<a class="headerlink" href="#option-file" title="Permalink to this headline">¶</a></h3>
+<p>When specifying a lot of options, it can be easier to put them all into a separate file.
+In such a file, the first line must be <tt class="docutils literal"><span class="pre">[pietree]</span></tt>, and then each option is on its own line, with the option name separated from its value by either <tt class="docutils literal"><span class="pre">=</span></tt> or <tt class="docutils literal"><span class="pre">:</span></tt>.
+For example:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="p">[</span><span class="n">pietree</span><span class="p">]</span>
+<span class="n">treefile</span> <span class="o">=</span> <span class="n">PieTree</span><span class="o">/</span><span class="n">examples</span><span class="o">/</span><span class="n">tree2</span><span class="o">.</span><span class="n">ttn</span>
+<span class="n">shape</span> <span class="o">=</span> <span class="n">radial</span>
+<span class="n">color0</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">color1</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mf">0.75</span><span class="p">,</span> <span class="mf">0.75</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Suppose that file is called <tt class="docutils literal"><span class="pre">opt.pie</span></tt>.
+Then to use it:</p>
+<div class="highlight-python"><pre>$ PieTree --optfile opts.pie</pre>
+</div>
+<p>When the same argument is provided on both the command line and in the options file, the command line value takes precedence.
+For example, with the options file above, this produces a rectangular tree:</p>
+<div class="highlight-python"><pre>$ PieTree --optfile opts.pie --shape rect</pre>
+</div>
+</div>
+<div class="section" id="more-options">
+<h3>More options<a class="headerlink" href="#more-options" title="Permalink to this headline">¶</a></h3>
+<p>There are many more options for tweaking the look of a tree:</p>
+<ul class="simple">
+<li><a class="reference internal" href="options.html#options"><em>List of All Options</em></a></li>
+<li><a class="reference internal" href="examples.html#examples"><em>Gallery of Examples</em></a></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+        </div>
+        <div class="sidebar">
+          <h3>Table Of Contents</h3>
+          <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="preliminaries.html">Preliminaries</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Usage</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#quick-start">Quick start</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#input-tree-file">Input tree file</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#specifying-options">Specifying options</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#command-line">Command line</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#option-file">Option file</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#more-options">More options</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="treefile.html">Creating a Tree &amp; States Data File</a></li>
+<li class="toctree-l1"><a class="reference internal" href="options.html">List of All Options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">Gallery of Examples</a></li>
+</ul>
+
+          <h3 style="margin-top: 1.5em;">Search</h3>
+          <form class="search" action="search.html" method="get">
+            <input type="text" name="q" />
+            <input type="submit" value="Go" />
+            <input type="hidden" name="check_keywords" value="yes" />
+            <input type="hidden" name="area" value="default" />
+          </form>
+          <!-- <p class="searchtip" style="font-size: 90%">
+            Enter search terms or a module, class or function name.
+		  </p> -->
+        </div>
+        <div class="clearer"></div>
+      </div>
+    </div>
+
+    <div class="footer-wrapper">
+      <div class="footer">
+	   <div class="left">
+		
+		  <a href="preliminaries.html" title="Preliminaries">PREVIOUS</a>
+		
+		  | 
+		
+		  <a href="treefile.html" title="Creating a Tree &amp; States Data File">NEXT</a>
+		
+		<!--
+          <a href="preliminaries.html" title="Preliminaries"
+             >previous</a> |
+          <a href="treefile.html" title="Creating a Tree &amp; States Data File"
+             >next</a> |
+          <a href="genindex.html" title="General Index"
+             >index</a>
+		-->
+        </div>
+        <div class="right", float="top">
+            <a href="_sources/usage.txt"
+               rel="nofollow">SHOW PAGE SOURCE</a>
+          
+    <div class="footer">
+        &copy; Copyright 2011, Emma E. Goldberg.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.
+    </div>
+        </div>
+        <div class="clearer"></div>
+      </div>
+    </div>
+
+  </body>
+</html>

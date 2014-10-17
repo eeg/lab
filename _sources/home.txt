@@ -1,0 +1,56 @@
+:tocdepth: 2
+
+****
+Home
+****
+
+Welcome
+=======
+
+The lab of Emma Goldberg recently opened its doors in the department of `Ecology, Evolution & Behavior`_ at the `University of Minnesota`_.
+Our :ref:`research interests <research>` center around biogeography and plant mating systems, mostly through the lens of evolutionary theory and phylogenetic comparative methods.
+
+Please see the :ref:`recruitment information <recruit>` if you are interested in joining the lab.
+
+And we are not alone!
+
+* `Theory for Life`_: We host weekly joint lab meetings about in-progress work on mathematical modeling in biology.  All are welcome to attend, participate, and receive feedback on ongoing work. 
+
+* `Evolution in the Twin Cities`_: We join with other with evolutionary enthusiasts for "evoltwin" weekly meetings and other events.
+
+Contact
+=======
+
+We're in the `Ecology Building`_ on the St Paul campus.
+[`Ecology map`_]
+
+Office
+------
+
+408 Ecology
+|br|
+612-625-5713
+|br|
+eeg <at> umn <dot> edu
+
+Lab
+---
+
+340-L Ecology
+|br|
+612-301-1856
+
+Mail
+----
+
+Department of Ecology, Evolution & Behavior
+|br|
+University of Minnesota
+|br|
+1987 Upper Buford Cir
+|br|
+Saint Paul, MN 55108-6097
+
+Mail Code 6097
+
+.. include:: links.txt

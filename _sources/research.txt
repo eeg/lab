@@ -1,0 +1,112 @@
+.. _research:
+
+:tocdepth: 2
+
+********
+Research
+********
+
+Over long timescales, biological diversity is shaped by trait evolution within populations and by the speciation and extinction of lineages.
+Research in the lab centers around geographic ranges and plant mating systems as two examples of characters influenced by both these microevolutionary and macroevolutionary forces.
+Our work generally includes the development and application of mathematical models, usually in collaboration with experts in various empirical systems.
+
+.. todo: ref links to pubs page
+
+Biogeography
+============
+
+Regional diversity dynamics
+---------------------------
+
+.. image:: _static/acropora.jpg
+   :align: left
+   :alt: Acropora nasuta, photo by Danwei Huang
+
+In all plant and animal groups, species richness and composition vary dramatically across the globe.
+To identify the large-scale drivers of diversity patterns, we work with dynamic models of three fundamental processes: speciation, extinction, and range shifts.
+Regional differences in these forces are the essence of the classic biogeographic concepts of "centers of origin," "museums of diversity," and "centers of accumulation," among others.
+Disentangling the contributions of lineage diversification and dispersal to observed spatial variation in richness and endemism requires thinking carefully about how these processes operate together to give rise to species' geographic distributions, stratigraphic ages of lineages, and phylogenetic trees.
+
+In recent collaborative projects, we have investigated the latitudinal diversity gradient in marine bivalves, California plant diversity in different habitat types, and coral diversity in the Indo-Pacific.
+New directions include the potential for geographic range to interact with intrinsic species' traits (including mating system---see below) to affect speciation and extinction.
+
+.. container:: collaborators
+
+   Collaborators: `Kaustuv Roy`_, `Rick Ree`_, `Lesley Lancaster`_, `Danwei Huang`_, `Brian Anacker`_, `Justen Whittall`_, `Russ Lande`_, `David Jablonski`_, `Loke Ming Chou`_, `Susan Harrison`_
+
+Coevolution and range limits
+----------------------------
+
+.. image:: _static/phylloscopus.jpg
+   :align: right
+   :alt: Phylloscopus chloronotus, photo by Thor Veen
+
+.. or might be P. proregulus? see AmNat press release
+.. possible causes of highly asymmetric character displacement
+
+Thinking about geographic ranges on a smaller scale, one can consider in more detail spatial variation in the environment and the processes acting within and between species.
+Our work here has focused on the connection between coevolutionary interactions and geographic range limits along environmental gradients.
+Population-dynamic and population-genetic models allow us to investigate how dispersal, resource competition, hybridization, local adaptation, and environmental conditions work together to limit species ranges.
+
+Work so far includes the spatial signatures of ecological and reproductive character displacement, the effects of partial dispersal barriers, and the evolutionary and population-dynamic consequences of ecological differences between competitors.
+Continuing considerations include the role of plasticity and the effects of environmental change on range limits and spatial distributions of traits.
+
+.. container:: collaborators
+
+   Collaborators: `Russ Lande`_, `Trevor Price`_
+
+Plant mating systems
+====================
+
+The amount of outcrossing (versus self-fertilization) in a population significantly shapes effective population size, inbreeding depression, and spatial distributions of genetic diversity.
+It thus has important consequences for population dynamics and, on longer timescales, for speciation and extinction.
+
+.. Mating system is thus an excellent trait to consider simultaneously from macro- and microevolutionary perspectives.
+
+.. Solanaceae (which contains tomato, potato, tobacco, nightshade, and other useful plants). Analyzing macroevolutionary change of SI presents an array of challenges and opportunities because of, for example, the apparent irreversibility of its loss within this group, its effects on lineage diversification, its vulnerability to polyploidization, and its close ties to other life history traits.
+
+Reproductive systems and lineage diversification
+------------------------------------------------
+
+.. image:: _static/schizanthus.jpg
+   :align: left
+   :alt: Schizanthus pinnatus, photo by Udo Schröter
+
+Self-incompatibility (SI) is a genetic mechanism that causes a hermaphrodite plant to reject its own pollen.
+SI systems are widespread in flowering plants, but they have been frequently lost due to a variety of conditions under which selfing is favored.
+We have shown that in the nightshade family `Solanaceae`_, despite transitions to self-compatibility (SC) in hundreds of lineages, species with SI have a higher net rate of diversification and are thus maintained within the family over long time-scales by species selection.
+Ongoing collaborative work asks whether dioecy---in which individual plants are either male or female---similarly affects rates of speciation and extinction, and how it has evolved from hermaphroditism across a wide range of plant genera.
+
+.. Dioecy---in which individuals are either male or female---also enforces outcrossing, but it has been gained more frequently and is yet less common than SI across angiosperms.
+
+Breeding or sexual system is surely not the only trait that affects speciation and extinction, however, and it is correlated with many other life-history and morphological traits.
+We are thus assembling a large database of species traits and quantifying family-wide character correlations and the effects of suites of traits on diversification rates.
+Because genome duplication disables the SI response in Solanaceae, and has itself been implicated as affecting lineage diversification, joint effects of polyploidy and breeding system are currently of particular interest.
+
+.. container:: collaborators
+
+   Collaborators: `Boris Igić`_, `Stacey Smith`_, `Karolis Ramanauskas`_, Kelly Robertson, `Stephen Smith`_, `Josh Kohn`_, `NESCent Tree of Sex`_ group
+
+.. (Tia-Lynn Ashman, Sally Otto, Itay Mayrose, Ray Ming, Jana Vamosi)
+
+Establishment of new populations
+--------------------------------
+
+.. image:: _static/solanum.jpg
+   :align: right
+   :alt: Solanum elaeagnifolium in pollination bag, photo by Emma Goldberg
+
+A new line of work in the lab is microevolutionary within-species modeling of the role of breeding system in the establishment of new populations.
+This is prompted in part by conclusions from our macroevolutionary analyses.
+One example is how breeding system affects speciation via polyploidy: our phylogenetic analysis in Solanaceae indicates a greater chance of producing a new (always SC) polyploid species when the diploid progenitor is SI.
+Another question is how SC species arise: existing models consider SC fixation within a single population, but our broad-scale findings suggest that divergence of a new SC population from the SI parent is more common.
+Our biogeographic interests also fit in here, too, with a new large-scale collaborative effort to link mating system and dispersal traits with colonization success and geographic range limits.
+
+.. container:: collaborators
+
+   Collaborators:
+   `Emmanuelle Porcher`_, `Russ Lande`_, `NESCent Baker's Law`_ group
+
+.. A new line of work in the lab is models that link population-levels processes to speciation and extinction.
+
+.. include:: links.txt

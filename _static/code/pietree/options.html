@@ -1,0 +1,278 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>List of All Options &mdash; PieTree 0.4 documentation</title>
+    
+    <link rel="stylesheet" href="_static/agogo.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '0.4',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="PieTree 0.4 documentation" href="index.html" />
+    <link rel="next" title="Gallery of Examples" href="examples.html" />
+    <link rel="prev" title="Creating a Tree &amp; States Data File" href="treefile.html" /> 
+  </head>
+  <body>
+    <div class="header-wrapper">
+      <div class="header">
+          <p class="logo"><a href="index.html">
+            <img class="logo" src="_static/logo.png" alt="Logo"/>
+          </a></p>
+        <!-- <div class="headertitle"><a -->
+          <!-- href="index.html">PieTree 0.4 documentation</a></div> -->
+        <div class="headertitle"><br></div>
+        <div class="rel">
+		
+		  <a href="treefile.html" title="Creating a Tree &amp; States Data File">PREVIOUS</a>
+		
+		  | 
+		
+		  <a href="examples.html" title="Gallery of Examples">NEXT</a>
+		
+		<br>
+	   <!--
+          <a href="treefile.html" title="Creating a Tree &amp; States Data File"
+             accesskey="P">previous</a> |
+          <a href="examples.html" title="Gallery of Examples"
+             accesskey="N">next</a> |
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a>
+	   -->
+        </div>
+       </div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="content">
+        <div class="document">
+            
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="list-of-all-options">
+<span id="options"></span><h1>List of All Options<a class="headerlink" href="#list-of-all-options" title="Permalink to this headline">¶</a></h1>
+<p>Recall that option names must be preceded with <tt class="docutils literal"><span class="pre">--</span></tt> when used on the command line.
+Alternatively, they can be placed in a file whose first line is <tt class="docutils literal"><span class="pre">[pietree]</span></tt>.
+See <a class="reference internal" href="usage.html#usage-options"><em>Specifying options</em></a>.</p>
+<div class="section" id="input-and-output-logistics">
+<h2>Input and output logistics<a class="headerlink" href="#input-and-output-logistics" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt><tt class="docutils literal"><span class="pre">treefile</span></tt></dt>
+<dd>Name of file containing tree and tip states.  See <a class="reference internal" href="usage.html#usage-treefile"><em>Input tree file</em></a>.</dd>
+<dt><tt class="docutils literal"><span class="pre">optfile</span></tt></dt>
+<dd>Name of file containing formatting options.   See <a class="reference internal" href="usage.html#usage-options"><em>Specifying options</em></a>.</dd>
+<dt><tt class="docutils literal"><span class="pre">outfile</span></tt></dt>
+<dd>Name for the output file.
+If it doesn’t have a suffix (like <tt class="docutils literal"><span class="pre">.pdf</span></tt>), an appropriate one will be appended.
+[default is <tt class="docutils literal"><span class="pre">pietree</span></tt>]</dd>
+<dt><tt class="docutils literal"><span class="pre">outformat</span></tt></dt>
+<dd><p class="first">File format of the output image.
+If an <tt class="docutils literal"><span class="pre">outfile</span></tt> with a suffix is also specified, <tt class="docutils literal"><span class="pre">outformat</span></tt> takes precedence and an appropriate suffix will be appended.</p>
+<p><tt class="docutils literal"><span class="pre">=</span> <span class="pre">pdf</span></tt> Adobe’s format [the default]</p>
+<p><tt class="docutils literal"><span class="pre">=</span> <span class="pre">eps</span></tt>  (encapsulated) postscript</p>
+<p><tt class="docutils literal"><span class="pre">=</span> <span class="pre">svg</span></tt> scalable vector graphics (works with Inkscape and Illustrator)</p>
+<p class="last"><tt class="docutils literal"><span class="pre">=</span> <span class="pre">png</span></tt> portable network graphics (lossless bitmap)</p>
+</dd>
+<dt><tt class="docutils literal"><span class="pre">width</span></tt></dt>
+<dd><p class="first">Width of the canvas.  The image is scaled horizontally to match this width.</p>
+<p class="last"><tt class="docutils literal"><span class="pre">=</span></tt> any positive number [default is 800]</p>
+</dd>
+<dt><tt class="docutils literal"><span class="pre">height</span></tt></dt>
+<dd><p class="first">Height of the canvas.  Doesn&#8217;t affect scaling of the image.</p>
+<p><tt class="docutils literal"><span class="pre">=</span></tt> any positive number</p>
+<p class="last">[default is determined by tree size for <tt class="docutils literal"><span class="pre">shape</span> <span class="pre">=</span> <span class="pre">rect</span></tt> or is <tt class="docutils literal"><span class="pre">width</span></tt> for <tt class="docutils literal"><span class="pre">shape</span> <span class="pre">=</span> <span class="pre">radial</span></tt>]</p>
+</dd>
+<dt><tt class="docutils literal"><span class="pre">xmargin</span></tt></dt>
+<dd><p class="first">Margin size on the left and right of the image.
+For <tt class="docutils literal"><span class="pre">shape</span> <span class="pre">=</span> <span class="pre">radial</span></tt>, these are based on the longest tip name.</p>
+<p class="last"><tt class="docutils literal"><span class="pre">=</span></tt> any positive number [default is 20]</p>
+</dd>
+<dt><tt class="docutils literal"><span class="pre">ymargin</span></tt></dt>
+<dd><p class="first">Margin size on the top and bottom of the image.</p>
+<p class="last"><tt class="docutils literal"><span class="pre">=</span></tt> any positive number [default is 10]</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="graphical-elements">
+<h2>Graphical elements<a class="headerlink" href="#graphical-elements" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt><tt class="docutils literal"><span class="pre">shape</span></tt></dt>
+<dd><p class="first">Shape in which the tree is drawn.</p>
+<p><tt class="docutils literal"><span class="pre">=</span> <span class="pre">rect</span></tt> rectangular, with all the tips on the right [the default]</p>
+<p class="last"><tt class="docutils literal"><span class="pre">=</span> <span class="pre">radial</span></tt> radial, with the tips along the outside of a circle</p>
+</dd>
+<dt><tt class="docutils literal"><span class="pre">scalebar</span></tt></dt>
+<dd><p class="first">Draw a bar showing the time scale of the plot.</p>
+<p><tt class="docutils literal"><span class="pre">=</span> <span class="pre">no</span></tt> no scale bar is drawn [the default]</p>
+<p><tt class="docutils literal"><span class="pre">=</span> <span class="pre">yes</span></tt> a scale bar of some auto-calculated length is drawn</p>
+<p class="last"><tt class="docutils literal"><span class="pre">=</span> <span class="pre">X</span></tt> a scale bar of length <tt class="docutils literal"><span class="pre">X</span></tt> is drawn (replace <tt class="docutils literal"><span class="pre">X</span></tt> with a number, obviously)</p>
+</dd>
+<dt><tt class="docutils literal"><span class="pre">colorX</span></tt></dt>
+<dd><p class="first">Color representing state <tt class="docutils literal"><span class="pre">X</span></tt>.  Replace <tt class="docutils literal"><span class="pre">X</span></tt> with <tt class="docutils literal"><span class="pre">0</span></tt>, <tt class="docutils literal"><span class="pre">1</span></tt>, etc.</p>
+<p><tt class="docutils literal"><span class="pre">=</span> <span class="pre">&quot;(R,</span> <span class="pre">G,</span> <span class="pre">B)&quot;</span></tt> see <a class="reference internal" href="#colornote"><em>Note on RGB colors</em></a></p>
+<p class="last">[defaults: <tt class="docutils literal"><span class="pre">color0</span> <span class="pre">=</span> <span class="pre">&quot;(1,</span> <span class="pre">1,</span> <span class="pre">1)&quot;</span></tt> (white), <tt class="docutils literal"><span class="pre">color1</span> <span class="pre">=</span> <span class="pre">&quot;(0,</span> <span class="pre">0,</span> <span class="pre">0)&quot;</span></tt> (black), no defaults for additional states]</p>
+</dd>
+<dt><tt class="docutils literal"><span class="pre">pieradius</span></tt></dt>
+<dd><p class="first">Radius of the pie chart showing the node reconstruction.</p>
+<p class="last"><tt class="docutils literal"><span class="pre">=</span></tt> any positive number [default is 7]</p>
+</dd>
+<dt><tt class="docutils literal"><span class="pre">boxsize</span></tt></dt>
+<dd><p class="first">Height of the box showing the tip state.</p>
+<p class="last"><tt class="docutils literal"><span class="pre">=</span></tt> any positive number [default is 1.9 * <tt class="docutils literal"><span class="pre">pieradius</span></tt>]</p>
+</dd>
+<dt><tt class="docutils literal"><span class="pre">rimthick</span></tt></dt>
+<dd><p class="first">Thickness of the lines around the pies and boxes.</p>
+<p class="last"><tt class="docutils literal"><span class="pre">=</span></tt> any positive number [default is 2]</p>
+</dd>
+<dt><tt class="docutils literal"><span class="pre">linethick</span></tt></dt>
+<dd><p class="first">Thickness of the branch lines.</p>
+<p class="last"><tt class="docutils literal"><span class="pre">=</span></tt> any positive number [default is 1]</p>
+</dd>
+<dt><tt class="docutils literal"><span class="pre">linecolor</span></tt></dt>
+<dd><p class="first">Color of the branches of the tree and other lines.</p>
+<p class="last"><tt class="docutils literal"><span class="pre">=</span> <span class="pre">&quot;(R,</span> <span class="pre">G,</span> <span class="pre">B)&quot;</span></tt> see <a class="reference internal" href="#colornote"><em>Note on RGB colors</em></a> [default is black]</p>
+</dd>
+<dt><tt class="docutils literal"><span class="pre">backcolor</span></tt></dt>
+<dd><p class="first">Color of the image background.</p>
+<p class="last"><tt class="docutils literal"><span class="pre">=</span> <span class="pre">&quot;(R,</span> <span class="pre">G,</span> <span class="pre">B)&quot;</span></tt> see <a class="reference internal" href="#colornote"><em>Note on RGB colors</em></a> [default is transparent for <tt class="docutils literal"><span class="pre">outformat</span> <span class="pre">=</span> <span class="pre">png</span></tt>, white otherwise]</p>
+</dd>
+<dt><tt class="docutils literal"><span class="pre">tipspacing</span></tt></dt>
+<dd><p class="first">Space between tip markers.</p>
+<p class="last"><tt class="docutils literal"><span class="pre">=</span></tt> any positive number [default is 1.5 * <tt class="docutils literal"><span class="pre">boxsize</span></tt>]</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="text-formatting">
+<h2>Text formatting<a class="headerlink" href="#text-formatting" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt><tt class="docutils literal"><span class="pre">tipnamesize</span></tt></dt>
+<dd><p class="first">Font size of the tip labels.</p>
+<p class="last"><tt class="docutils literal"><span class="pre">=</span></tt> any positive number [default is <tt class="docutils literal"><span class="pre">boxsize</span></tt>]</p>
+</dd>
+<dt><tt class="docutils literal"><span class="pre">nodenamesize</span></tt></dt>
+<dd><p class="first">Font size of the internal node labels.</p>
+<p class="last"><tt class="docutils literal"><span class="pre">=</span></tt> any positive number [default is 0.75 * <tt class="docutils literal"><span class="pre">tipnamesize</span></tt>]</p>
+</dd>
+<dt><tt class="docutils literal"><span class="pre">italic</span></tt></dt>
+<dd><p class="first">Whether to italicize the text</p>
+<p><tt class="docutils literal"><span class="pre">=</span> <span class="pre">yes</span></tt> italics</p>
+<p class="last"><tt class="docutils literal"><span class="pre">=</span> <span class="pre">no</span></tt> normal upright [the default]</p>
+</dd>
+<dt><tt class="docutils literal"><span class="pre">serif</span></tt></dt>
+<dd><p class="first">Whether to use a serif font.</p>
+<p><tt class="docutils literal"><span class="pre">=</span> <span class="pre">yes</span></tt> serif font</p>
+<p class="last"><tt class="docutils literal"><span class="pre">=</span> <span class="pre">no</span></tt> sans-serif font [the default]</p>
+</dd>
+<dt><tt class="docutils literal"><span class="pre">underscorespace</span></tt></dt>
+<dd><p class="first">Whether to replace <tt class="docutils literal"><span class="pre">_</span></tt> with a space in tip and node names.</p>
+<p><tt class="docutils literal"><span class="pre">=</span> <span class="pre">yes</span></tt> do replace underscores</p>
+<p class="last"><tt class="docutils literal"><span class="pre">=</span> <span class="pre">no</span></tt> don&#8217;t replace underscores [the default]</p>
+</dd>
+<dt><tt class="docutils literal"><span class="pre">textcolor</span></tt></dt>
+<dd><p class="first">Color of tip and node labels</p>
+<p class="last"><tt class="docutils literal"><span class="pre">=</span> <span class="pre">&quot;(R,</span> <span class="pre">G,</span> <span class="pre">B)&quot;</span></tt> see <a class="reference internal" href="#colornote"><em>Note on RGB colors</em></a> [default is black]</p>
+</dd>
+<dt><tt class="docutils literal"><span class="pre">tipnamestatecolor</span></tt></dt>
+<dd><p class="first">Whether to color the tip text label according to the tip state.</p>
+<p><tt class="docutils literal"><span class="pre">=</span> <span class="pre">yes</span></tt> take tip label color from tip state</p>
+<p class="last"><tt class="docutils literal"><span class="pre">=</span> <span class="pre">no</span></tt> use <tt class="docutils literal"><span class="pre">textcolor</span></tt> for tip label [the default]</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="note-on-rgb-colors">
+<span id="colornote"></span><h2>Note on RGB colors<a class="headerlink" href="#note-on-rgb-colors" title="Permalink to this headline">¶</a></h2>
+<p><tt class="docutils literal"><span class="pre">R</span></tt>, <tt class="docutils literal"><span class="pre">G</span></tt>, and <tt class="docutils literal"><span class="pre">B</span></tt> are the values for the red, green, and blue components of the color.
+Each takes a value between 0 and 1.
+These three numbers must be separated with commas and the whole thing surrounded with parentheses.  On the command line, put quote marks outside the parentheses.
+For example, <tt class="docutils literal"><span class="pre">color0</span> <span class="pre">=</span> <span class="pre">(0.24,</span> <span class="pre">0.62,</span> <span class="pre">0.82)</span></tt> in an option file, and <tt class="docutils literal"><span class="pre">--color0</span> <span class="pre">=</span> <span class="pre">&quot;(0.24,</span> <span class="pre">0.62,</span> <span class="pre">0.82)&quot;</span></tt> on the command line.</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+        </div>
+        <div class="sidebar">
+          <h3>Table Of Contents</h3>
+          <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="preliminaries.html">Preliminaries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="treefile.html">Creating a Tree &amp; States Data File</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">List of All Options</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#input-and-output-logistics">Input and output logistics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#graphical-elements">Graphical elements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#text-formatting">Text formatting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#note-on-rgb-colors">Note on RGB colors</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">Gallery of Examples</a></li>
+</ul>
+
+          <h3 style="margin-top: 1.5em;">Search</h3>
+          <form class="search" action="search.html" method="get">
+            <input type="text" name="q" />
+            <input type="submit" value="Go" />
+            <input type="hidden" name="check_keywords" value="yes" />
+            <input type="hidden" name="area" value="default" />
+          </form>
+          <!-- <p class="searchtip" style="font-size: 90%">
+            Enter search terms or a module, class or function name.
+		  </p> -->
+        </div>
+        <div class="clearer"></div>
+      </div>
+    </div>
+
+    <div class="footer-wrapper">
+      <div class="footer">
+	   <div class="left">
+		
+		  <a href="treefile.html" title="Creating a Tree &amp; States Data File">PREVIOUS</a>
+		
+		  | 
+		
+		  <a href="examples.html" title="Gallery of Examples">NEXT</a>
+		
+		<!--
+          <a href="treefile.html" title="Creating a Tree &amp; States Data File"
+             >previous</a> |
+          <a href="examples.html" title="Gallery of Examples"
+             >next</a> |
+          <a href="genindex.html" title="General Index"
+             >index</a>
+		-->
+        </div>
+        <div class="right", float="top">
+            <a href="_sources/options.txt"
+               rel="nofollow">SHOW PAGE SOURCE</a>
+          
+    <div class="footer">
+        &copy; Copyright 2011, Emma E. Goldberg.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.
+    </div>
+        </div>
+        <div class="clearer"></div>
+      </div>
+    </div>
+
+  </body>
+</html>

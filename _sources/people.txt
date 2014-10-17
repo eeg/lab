@@ -1,0 +1,87 @@
+.. _people:
+
+:tocdepth: 2
+
+******
+People
+******
+
+Current members
+===============
+
+.. image:: _static/emma.jpg
+   :align: left
+   :alt: EEG photo
+
+Emma E. Goldberg
+----------------
+
+I joined the `UMN EEB`_ faculty in January 2014.
+I was a grad student with `Russ Lande`_ at UC San Diego, then a postdoc with `Bill Fagan`_ at Univ Maryland, and most recently a postdoc with `Boris Igić`_ at Univ Illinois Chicago.
+Upon moving here, I immediately became addicted to ice skating.
+[CV_]
+
+|
+|
+|
+|
+
+.. pipes above are a cheat to clear the floating
+.. http://stackoverflow.com/questions/4550021/working-example-of-floating-image-in-restructured-text
+.. .. role:: raw-html(raw)
+..    :format: html
+.. 
+.. :raw-html:`<br style="clear:both">`
+
+Tanjona Ramiadantsoa
+------------------------
+
+We will be welcoming Tanjona to the lab as a postdoc later this year!
+He is currently finishing his PhD with Ilkka Hanski and Otso Ovaskainen at Univ Helsinki, working on models of ecological, macroevolutionary, biogeographic, and conservation questions.
+
+.. _recruit:
+
+Recruitment
+===========
+
+Opportunities are available for students and postdocs to join the lab.
+Choices of projects are quite open: inquiries are encouraged from anyone with related :ref:`research interests <research>` in quantitative aspects of macroevolution, biogeography, coevolution, or plant evolutionary biology.
+
+I expect everyone in the lab group to be resourceful and work to develop their own interests and approaches.
+In return, I will be accessible for discussions of everything from broad ideas to technical details.
+Lab members are also encouraged to take advantage of expertise in nearby research groups.
+See especially our `Theory for Life`_ and `Evolution in the Twin Cities`_ groups, and the departments of `Ecology, Evolution & Behavior`_ and `Plant Biology`_.
+I will facilitate joint lab meetings and co-advising as appropriate.
+
+Postdoctoral researchers
+------------------------
+
+Inquiries are welcome from prospective postdocs with prior modeling and computing experience, and also from those with more empirical backgrounds who would like to explore related questions through theory.
+If you are interested, please send me an email introducing yourself and outlining the research areas you would like to pursue with the lab.
+We can then discuss specific projects and potential funding sources.
+
+Graduate students
+-----------------
+
+I am looking for one or two students to join the lab.
+Incoming students should have some research experience and quantitative inclinations, but the exact nature of those is flexible---I am happy to consider students who majored in biology, math, computer science, engineering, or other fields.  (I started in physics myself.)
+I expect theses to have a substantial theory component, but I am open to discussing opportunities for complementary empirical work, such as gathering data to test a novel analysis technique or parameterize a model.
+
+I can take students through the `EEB grad program`_ and the `PlantBio grad program`_.
+Applications are due in early December.
+If you would like to apply to either department and perhaps work with me, please send me an email introducing yourself and outlining your interests so that I can look for your application.
+
+Undergraduate students
+----------------------
+
+I am always happy to hear from students---majoring in biology, math, computer science, or other fields---who would like to conduct work in the lab.
+On your part, this requires curiosity, diligence, and an interest in thinking about biological questions in quantitative terms.
+I can help you identify a tractable question and learn the techniques you need to answer it.
+
+.. Your career goals need not include academic biology for this experience to be valuable: practice with logical thinking and analysis, along with basic math and computer skills, will be useful in any field.
+
+If this interests you, please read about `directed research in CBS`_ and the `Undergraduate Research Opportunities Program`_.
+Then send me an email introducing yourself and briefly describing what you might like to gain from the experience.
+We can meet to discuss possible projects and take it from there.
+
+.. include:: links.txt

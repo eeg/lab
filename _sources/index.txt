@@ -1,0 +1,34 @@
+.. Goldberg Lab documentation master file, created by
+   sphinx-quickstart on Fri Jun 28 14:48:48 2013.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+*****
+Index
+*****
+
+Site Contents
+=============
+
+.. toctree::
+   :maxdepth: 3
+
+   home.rst
+   research.rst
+   people.rst
+   pubs.rst
+   code.rst
+
+|
+|
+|
+|
+
+.. ugly spacer to allow sidebar to fit; maybe just redirect to home.html?
+
+
+.. Indices and tables
+   ==================
+   * :ref:`genindex`
+   * :ref:`modindex`
+   * :ref:`search`

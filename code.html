@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Software &mdash; Goldberg Lab at UMN</title>
+    
+    <link rel="stylesheet" href="_static/solar.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Goldberg Lab at UMN" href="index.html" />
+    <link rel="prev" title="Publications" href="pubs.html" /><link href='http://fonts.googleapis.com/css?family=Source+Code+Pro|Open+Sans:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
+<link href="_static/solarized-dark.css" rel="stylesheet">
+  </head>
+  <body> 
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+<p class="logo"> <img class="logo" src="_static/bricks.jpg" alt="Logo"/> </p>
+<h3></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="home.html">Home</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="home.html#welcome">Welcome</a></li>
+<li class="toctree-l2"><a class="reference internal" href="home.html#contact">Contact</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="research.html">Research</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="research.html#biogeography">Biogeography</a></li>
+<li class="toctree-l2"><a class="reference internal" href="research.html#plant-mating-systems">Plant mating systems</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="people.html">People</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="people.html#current-members">Current members</a></li>
+<li class="toctree-l2"><a class="reference internal" href="people.html#recruitment">Recruitment</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pubs.html">Publications</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Software</a></li>
+</ul>
+
+<h3></h3>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="software">
+<h1>Software</h1>
+<p>Much of our work involves the development of new software tools.
+Sharing code facilitates collaboration, enforces accountability, and encourages good development practices.
+(And as a long-time user near-exclusively of open source software, I want to make my own small contribution to the community.)</p>
+<div class="section" id="state-dependent-diversification">
+<h2>State-Dependent Diversification</h2>
+<div class="section" id="simtreesdd">
+<h3>SimTreeSDD</h3>
+<p>This is C code for fast simulation of phylogenetic trees under a birth-death process in which a binary character or three-state geographic character evolves and affects rates of speciation and extinction.
+I&#8217;ve been building on the codebase for occasional projects since 2003.
+Besides generating phylogenies for BiSSE-like models, we&#8217;ve compared in different contexts the &#8220;neontological ages&#8221; of species (time since most recent ancestor shared by extant species) with &#8220;paleontological ages&#8221; (time since origination under a budding model of speciation).</p>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/eeg/SimTreeSDD">public codebase</a></li>
+<li><a class="reference external" href="https://github.umn.edu/eeg/SimTreeSDD">messier development</a></li>
+<li>latest release: <a class="reference external" href="_static/code/SimTreeSDD-manual.pdf">manual</a> and <a class="reference external" href="_static/code/SimTreeSDD-20140518.tar.gz">source</a></li>
+</ul>
+<p>Goldberg, E.E.
+2014.
+<strong>SimTreeSDD: Simulating phylogenetic trees under state-dependent diversification</strong>. <a class="reference external" href="http://dx.doi.org/10.5281/zenodo.9965"><img alt="DOI" class="aimg" src="_images/zenodo.9965.png" /></a></p>
+</div>
+<div class="section" id="diversitree">
+<h3>Diversitree</h3>
+<p>This is an R package (with C components) written by <a class="reference external" href="http://www.zoology.ubc.ca/~fitzjohn/">Rich FitzJohn</a>.
+It provides a robust implementation of BiSSE and related models, along with utilities for simulating, fitting, and plotting data.
+I have contributed two models, GeoSSE and ClaSSE, and miscellaneous small fixes.</p>
+<ul class="simple">
+<li><a class="reference external" href="http://www.zoology.ubc.ca/prog/diversitree">project page</a></li>
+<li><a class="reference external" href="http://cran.r-project.org/web/packages/diversitree">CRAN page</a></li>
+<li>development: <a class="reference external" href="http://www.github.com/richfitz/diversitree">official</a> and <a class="reference external" href="http://www.github.com/eeg/diversitree">my fork</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="spatial-coevolution">
+<h2>Spatial Coevolution</h2>
+<div class="section" id="seasonal-character-displacement">
+<h3>Seasonal character displacement</h3>
+<p>Here is the code used for:
+Goldberg, E.E., R. Lande, and T.D. Price.
+2012.
+Population regulation and character displacement in a seasonal environment.
+The American Naturalist 179:693-705.</p>
+<ul class="simple">
+<li><a class="reference external" href="_static/code/season-cd.tar.gz">download R code</a></li>
+</ul>
+</div>
+<div class="section" id="evocompx">
+<h3>EvoCompX</h3>
+<p>This C codebase is for my projects involving gene flow, local adaption, and interspecific interactions.
+(It is currently in an awkward git-subtree state...)</p>
+<ul class="simple">
+<li><a class="reference external" href="https://github.umn.edu/eeg/EvoCompX">development</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="miscellaneous">
+<h2>Miscellaneous</h2>
+<div class="section" id="pietree">
+<h3>PieTree</h3>
+<p>This is a program for producing pictures of phylogenetic trees, particularly for the purpose of displaying ancestral state reconstructions of discrete characters.
+I wrote it to make figures for a paper (Goldberg &amp; Igić 2008), but mostly to learn how Python works with the Cairo graphics library, CGI, and Sphinx documentation.</p>
+<ul class="simple">
+<li><a class="reference external" href="_static/code/PieTree-0.4.tar.gz">source code</a></li>
+<li>documentation: <a class="reference external" href="_static/code/PieTree_manual.pdf">pdf</a> or <a class="reference external" href="_static/code/pietree/index.html">elaborate html</a></li>
+<li><a class="reference external" href="_static/code/PieTree_examples.pdf">example output</a></li>
+<li><a class="reference external" href="http://www.ugcs.caltech.edu/~emma/cgi-bin/WebPieTree.py">old web demo</a></li>
+</ul>
+</div>
+<div class="section" id="edgefx">
+<h3>edgefx</h3>
+<p>This is an R package for computing the ecological effects of <a class="reference external" href="http://www.clfs.umd.edu/lries/EERC/EERC.html">habitat edges</a> in landscapes.
+It extends a mathematical description of the &#8220;edge response&#8221; (how a species&#8217; population density or other property is affected by the distance to a change in habitat type) to an arbitrarily-complex landscape of edges.
+This enables parameter estimation from survey data and predictions to other landscapes.
+I wrote it for <a class="reference external" href="http://www.clfs.umd.edu/biology/faganlab/people/ries.html">Leslie Ries</a> and her <a class="reference external" href="http://serdp.org/News-and-Events/In-the-Spotlight/Predicting-Responses-to-Landscape-Changes/(language)/eng-US">award-winning project</a>.</p>
+<ul class="simple">
+<li><a class="reference external" href="_static/code/edgefx_vignette.pdf">pdf tutorial</a></li>
+<li><a class="reference external" href="_static/code/edgefx_0.2.2.tar.gz">full package</a> (source code, tutorial, function reference, example files)</li>
+</ul>
+</div>
+<div class="section" id="steppingstone-sampler">
+<h3>Steppingstone sampler</h3>
+<p>Here is a bit of R code for using the <a class="reference external" href="http://dx.doi.org/10.1093/sysbio/syq085">steppingstone algorithm</a> to compute marginal likelihoods, for the purpose of statistical model comparison via Bayes Factors.
+Nothing fancy, but several people have asked for it, so may as well post it in case it&#8217;s useful to more folks.</p>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/eeg/stepping_stone_diversitree">on github</a></li>
+</ul>
+<p>Goldberg, E.E.
+2014.
+<strong>A steppingstone sampler in R</strong>. <a class="reference external" href="http://dx.doi.org/10.5281/zenodo.10716"><img alt="DOI" class="aimg" src="_images/zenodo.10716.png" /></a></p>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div> 
+    <div class="footer">
+	    <span style="float:left; padding-left: 8px">E.E. Goldberg | <a href="http://www.cbs.umn.edu/eeb">Ecology, Evolution &amp; Behavior</a> | <a href="http://www.umn.edu">University of Minnesota</a></span>
+     <a href="http://sphinx.pocoo.org/">Sphinx</a> | <a href="http://ethanschoonover.com/solarized">Solarized</a>
+    </div>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript"> var sc_project=9262271; var sc_invisible=1; var sc_security="b646f090"; var scJsHost = (("https:" == document.location.protocol) ?  "https://secure." : "http://www."); document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+ "statcounter.com/counter/counter.js'></"+"script>"); </script>
+<noscript><div class="statcounter"><a title="hits counter" href="http://statcounter.com/free-hit-counter/" target="_blank"><img class="statcounter" src="http://c.statcounter.com/9262271/0/b646f090/1/" alt="hits counter"></a></div></noscript>
+<!-- End of StatCounter Code -->
+  </body>
+</html>

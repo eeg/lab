@@ -1,0 +1,234 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Preliminaries &mdash; PieTree 0.4 documentation</title>
+    
+    <link rel="stylesheet" href="_static/agogo.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '0.4',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="PieTree 0.4 documentation" href="index.html" />
+    <link rel="next" title="Usage" href="usage.html" />
+    <link rel="prev" title="Manual for PieTree 0.4" href="index.html" /> 
+  </head>
+  <body>
+    <div class="header-wrapper">
+      <div class="header">
+          <p class="logo"><a href="index.html">
+            <img class="logo" src="_static/logo.png" alt="Logo"/>
+          </a></p>
+        <!-- <div class="headertitle"><a -->
+          <!-- href="index.html">PieTree 0.4 documentation</a></div> -->
+        <div class="headertitle"><br></div>
+        <div class="rel">
+		
+		  <a href="index.html" title="Manual for PieTree 0.4">PREVIOUS</a>
+		
+		  | 
+		
+		  <a href="usage.html" title="Usage">NEXT</a>
+		
+		<br>
+	   <!--
+          <a href="index.html" title="Manual for PieTree 0.4"
+             accesskey="P">previous</a> |
+          <a href="usage.html" title="Usage"
+             accesskey="N">next</a> |
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a>
+	   -->
+        </div>
+       </div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="content">
+        <div class="document">
+            
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="preliminaries">
+<span id="id1"></span><h1>Preliminaries<a class="headerlink" href="#preliminaries" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="purpose">
+<h3>Purpose<a class="headerlink" href="#purpose" title="Permalink to this headline">¶</a></h3>
+<p><cite>PieTree</cite> is a program for drawing pretty pictures of phylogenetic trees.
+Its main purpose is displaying discrete character states, including ancestral state reconstructions.
+Its name comes from using a pie chart to show the probability of a node being in the various possible states.</p>
+<p><cite>PieTree</cite> doesn&#8217;t do any kind of analysis&#8212;it just produces images.
+Carrying out ancestral state reconstruction in another program and assembling the results for use with <cite>PieTree</cite> is illustrated in <a class="reference internal" href="treefile.html#treefile"><em>Creating a Tree &amp; States Data File</em></a>.</p>
+</div>
+<div class="section" id="history">
+<h3>History<a class="headerlink" href="#history" title="Permalink to this headline">¶</a></h3>
+<p>The first incarnation of <cite>PieTree</cite> was written in C by Walter Brisken in 2007.
+In  2008, I rewrote it all in Python (as an excuse to practice Python and learn about the Cairo graphics library) and gave it a more useable interface.
+Features have been gradually accumulating since then.</p>
+</div>
+<div class="section" id="feedback">
+<h3>Feedback<a class="headerlink" href="#feedback" title="Permalink to this headline">¶</a></h3>
+<p>Please send bug reports, feature requests, and any other comments to me at <a class="reference external" href="mailto:eeg&#37;&#52;&#48;uic&#46;edu">eeg<span>&#64;</span>uic<span>&#46;</span>edu</a>.</p>
+</div>
+<div class="section" id="license">
+<h3>License<a class="headerlink" href="#license" title="Permalink to this headline">¶</a></h3>
+<p><cite>PieTree</cite> is released under the <a class="reference external" href="http://www.gnu.org/licenses/">GNU General Public License</a>.</p>
+</div>
+</div>
+<div class="section" id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="dependencies">
+<h3>Dependencies<a class="headerlink" href="#dependencies" title="Permalink to this headline">¶</a></h3>
+<p><cite>PieTree</cite> requires:</p>
+<ul class="simple">
+<li>The <a class="reference external" href="http://python.org">Python</a> programming language, version 2.5.x, 2.6.x, or 2.7.x</li>
+<li>The <a class="reference external" href="http://cairographics.org">Cairo</a> graphics library, version 1.4.x or greater</li>
+<li>The <a class="reference external" href="http://cairographics.org/pycairo">pycairo</a> Python module for cairo</li>
+<li>The Python module <a class="reference external" href="http://docs.python.org/library/argparse.html">argparse</a></li>
+<li>Some other Python modules that seem to be standard on all installations.</li>
+</ul>
+<p>When the dependencies are satisfied, this should work without errors:</p>
+<div class="highlight-python"><pre>$ python
+Python 2.6.5
+&gt;&gt;&gt; import cairo
+&gt;&gt;&gt; import argparse</pre>
+</div>
+<div class="section" id="linux">
+<h4>Linux<a class="headerlink" href="#linux" title="Permalink to this headline">¶</a></h4>
+<p>On Ubuntu:</p>
+<div class="highlight-python"><pre>$ sudo apt-get install python-cairo
+$ sudo easy_install argparse</pre>
+</div>
+<p>On Gentoo or Fedora, the package is called <tt class="docutils literal"><span class="pre">pycairo</span></tt> instead.</p>
+</div>
+<div class="section" id="mac-os-x">
+<h4>Mac OS X<a class="headerlink" href="#mac-os-x" title="Permalink to this headline">¶</a></h4>
+<p>These instructions are courtesy of Lesley Lancaster, for Leopard 10.5.7 in Aug 2009 (and corrected by a MacPorts manager).</p>
+<ul>
+<li><p class="first">Install <a class="reference external" href="http://developer.apple.com/technology/Xcode.html">Xcode</a> developer tools for Mac</p>
+</li>
+<li><p class="first">Install <a class="reference external" href="http://www.macports.org">MacPorts</a></p>
+</li>
+<li><p class="first">Install <tt class="docutils literal"><span class="pre">py25-cairo</span></tt> using MacPorts:</p>
+<div class="highlight-python"><pre>$ sudo port install py25-cairo</pre>
+</div>
+</li>
+</ul>
+</div>
+<div class="section" id="windows">
+<h4>Windows<a class="headerlink" href="#windows" title="Permalink to this headline">¶</a></h4>
+<p>It shouldn&#8217;t be hard, but I haven&#8217;t tried.</p>
+</div>
+</div>
+<div class="section" id="pietree-itself">
+<h3>PieTree itself<a class="headerlink" href="#pietree-itself" title="Permalink to this headline">¶</a></h3>
+<p>The latest version of <cite>PieTree</cite> is available from <a class="reference external" href="http://www.uic.edu/~eeg/code.html">http://www.uic.edu/~eeg/code.html</a>.</p>
+<p>The program to run is <tt class="docutils literal"><span class="pre">PieTree/src/PieTree.py</span></tt>.
+How to add this to your path is a matter of personal taste.
+Here are examples of two possibilities:</p>
+<div class="highlight-python"><pre>$ ln -s /home/emma/PieTree/src/PieTree.py /home/emma/bin/PieTree
+# or
+$ alias PieTree="/home/emma/PieTree/src/PieTree.py"</pre>
+</div>
+<p>The rest of this documentation assumes that running simply <tt class="docutils literal"><span class="pre">PieTree</span></tt> calls the program.</p>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+        </div>
+        <div class="sidebar">
+          <h3>Table Of Contents</h3>
+          <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="">Preliminaries</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#purpose">Purpose</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#history">History</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#feedback">Feedback</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#license">License</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#installation">Installation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#dependencies">Dependencies</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pietree-itself">PieTree itself</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="treefile.html">Creating a Tree &amp; States Data File</a></li>
+<li class="toctree-l1"><a class="reference internal" href="options.html">List of All Options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">Gallery of Examples</a></li>
+</ul>
+
+          <h3 style="margin-top: 1.5em;">Search</h3>
+          <form class="search" action="search.html" method="get">
+            <input type="text" name="q" />
+            <input type="submit" value="Go" />
+            <input type="hidden" name="check_keywords" value="yes" />
+            <input type="hidden" name="area" value="default" />
+          </form>
+          <!-- <p class="searchtip" style="font-size: 90%">
+            Enter search terms or a module, class or function name.
+		  </p> -->
+        </div>
+        <div class="clearer"></div>
+      </div>
+    </div>
+
+    <div class="footer-wrapper">
+      <div class="footer">
+	   <div class="left">
+		
+		  <a href="index.html" title="Manual for PieTree 0.4">PREVIOUS</a>
+		
+		  | 
+		
+		  <a href="usage.html" title="Usage">NEXT</a>
+		
+		<!--
+          <a href="index.html" title="Manual for PieTree 0.4"
+             >previous</a> |
+          <a href="usage.html" title="Usage"
+             >next</a> |
+          <a href="genindex.html" title="General Index"
+             >index</a>
+		-->
+        </div>
+        <div class="right", float="top">
+            <a href="_sources/preliminaries.txt"
+               rel="nofollow">SHOW PAGE SOURCE</a>
+          
+    <div class="footer">
+        &copy; Copyright 2011, Emma E. Goldberg.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.
+    </div>
+        </div>
+        <div class="clearer"></div>
+      </div>
+    </div>
+
+  </body>
+</html>
