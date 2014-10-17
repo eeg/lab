@@ -1,4 +1,8 @@
 #!/bin/bash
+
+rm -rf _*/ *.html
+cp -r ../_build/html/* .
+
 rm -rf genindex.html objects.inv search.html searchindex.js _sources/
 
 echo "<!DOCTYPE html PUBLIC '-//W3C//DTD HTML 3.2//EN'>
