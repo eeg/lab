@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# first, "cd ../ ; make html"
 rm -rf _*/ *.html
 cp -r ../_build/html/* .
 
