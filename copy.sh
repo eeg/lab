@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # first, "cd ../ ; make html"
-rm -rf _*/ *.html
+rm -rf _images/ _static/*.* _static/reprints/ *.html
 cp -r ../_build/html/* .
 
 rm -rf genindex.html objects.inv search.html searchindex.js _sources/
