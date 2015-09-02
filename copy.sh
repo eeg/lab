@@ -3,7 +3,7 @@
 # first, "cd ../ ; make html"
 rm -rf _images/ _static/*.* _static/reprints/ *.html
 cp -r  ../_build/html/* .
-cp     ../_build/html/_static/goldberg_cv.pdf .
+cp     ../_build/html/_static/goldberg_cv.pdf _static/
 
 rm -rf genindex.html objects.inv search.html searchindex.js _sources/
 
