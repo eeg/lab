@@ -1,32 +1,30 @@
 <!DOCTYPE html>
 
-
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
-    <title>Software &mdash; Goldberg Lab at UMN</title>
-    
+    <title>Software &#8212; Goldberg Lab at UMN</title>
     <link rel="stylesheet" href="_static/solar.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
         VERSION:     '',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
       };
     </script>
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="top" title="Goldberg Lab at UMN" href="index.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
     <link rel="prev" title="People" href="people.html" /><link href='http://fonts.googleapis.com/css?family=Source+Code+Pro|Open+Sans:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
 <link href="_static/solarized-dark.css" rel="stylesheet">
   </head>
-  <body role="document"> 
+  <body> 
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
 <p class="logo"> <img class="logo" src="_static/bricks.jpg" alt="Logo"/> </p>
@@ -36,7 +34,7 @@
 <li class="toctree-l1"><a class="reference internal" href="research.html">Research</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pubs.html">Publications</a></li>
 <li class="toctree-l1"><a class="reference internal" href="people.html">People</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="">Software</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Software</a></li>
 </ul>
 
 <h3></h3>
@@ -58,8 +56,8 @@ Sharing code facilitates collaboration, enforces accountability, and encourages 
 <div class="section" id="simtreesdd">
 <h3>SimTreeSDD</h3>
 <p>This is C code for fast simulation of phylogenetic trees under a birth-death process in which a binary character or three-state geographic character evolves and affects rates of speciation and extinction.
-I&#8217;ve been building on the codebase for occasional projects since 2003.
-Besides generating phylogenies for BiSSE-like models, we&#8217;ve compared in different contexts the &#8220;neontological ages&#8221; of species (time since most recent ancestor shared by extant species) with &#8220;paleontological ages&#8221; (time since origination under a budding model of speciation).</p>
+I’ve been building on the codebase for occasional projects since 2003.
+Besides generating phylogenies for BiSSE-like models, we’ve compared in different contexts the “neontological ages” of species (time since most recent ancestor shared by extant species) with “paleontological ages” (time since origination under a budding model of speciation).</p>
 <ul class="simple">
 <li><a class="reference external" href="https://github.com/eeg/SimTreeSDD">public codebase</a></li>
 <li><a class="reference external" href="https://github.umn.edu/eeg/SimTreeSDD">messier development</a></li>
@@ -97,7 +95,7 @@ The American Naturalist 179:693-705.</p>
 <div class="section" id="evocompx">
 <h3>EvoCompX</h3>
 <p>This C codebase is for my projects involving gene flow, local adaption, and interspecific interactions.
-(It is currently in an awkward git-subtree state...)</p>
+(It is currently in an awkward git-subtree state…)</p>
 <ul class="simple">
 <li><a class="reference external" href="https://github.umn.edu/eeg/EvoCompX">development</a></li>
 </ul>
@@ -120,7 +118,7 @@ I wrote it to make figures for a paper (Goldberg &amp; Igić 2008), but mostly t
 <div class="section" id="edgefx">
 <h3>edgefx</h3>
 <p>This is an R package for computing the ecological effects of <a class="reference external" href="http://www.clfs.umd.edu/lries/EERC/EERC.html">habitat edges</a> in landscapes.
-It extends a mathematical description of the &#8220;edge response&#8221; (how a species&#8217; population density or other property is affected by the distance to a change in habitat type) to an arbitrarily-complex landscape of edges.
+It extends a mathematical description of the “edge response” (how a species’ population density or other property is affected by the distance to a change in habitat type) to an arbitrarily-complex landscape of edges.
 This enables parameter estimation from survey data and predictions to other landscapes.
 I wrote it for <a class="reference external" href="http://www.clfs.umd.edu/biology/faganlab/people/ries.html">Leslie Ries</a> and her <a class="reference external" href="http://serdp.org/News-and-Events/In-the-Spotlight/Predicting-Responses-to-Landscape-Changes/(language)/eng-US">award-winning project</a>.</p>
 <ul class="simple">
@@ -131,7 +129,7 @@ I wrote it for <a class="reference external" href="http://www.clfs.umd.edu/biolo
 <div class="section" id="steppingstone-sampler">
 <h3>Steppingstone sampler</h3>
 <p>Here is a bit of R code for using the <a class="reference external" href="http://dx.doi.org/10.1093/sysbio/syq085">steppingstone algorithm</a> to compute marginal likelihoods, for the purpose of statistical model comparison via Bayes Factors.
-Nothing fancy, but several people have asked for it, so may as well post it in case it&#8217;s useful to more folks.</p>
+Nothing fancy, but several people have asked for it, so may as well post it in case it’s useful to more folks.</p>
 <ul class="simple">
 <li><a class="reference external" href="https://github.com/eeg/stepping_stone_diversitree">on github</a></li>
 </ul>
